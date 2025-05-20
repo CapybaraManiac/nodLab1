@@ -10,3 +10,5 @@ const echoInput = (chunk) => {
 };
 
 process.stdin.on('data', echoInput);
+
+process.stdin.pipe(process.stdout);
